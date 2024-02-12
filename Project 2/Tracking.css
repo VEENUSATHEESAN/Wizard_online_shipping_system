@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #4CAF50;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#tracking-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: left;
+}
+
+#tracking-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#tracking-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+#track-btn, #reset-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+#package-status {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: left;
+  padding-top: 30px;
+}
+
+#package-status h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#package-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#package-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#package-list li:last-child {
+  border-bottom: none;
+}

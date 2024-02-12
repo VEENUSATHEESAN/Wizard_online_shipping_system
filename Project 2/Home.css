@@ -1,0 +1,160 @@
+/* Basic Reset */
+body, h1, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333333;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 20px;
+    background-color: #008CBA;
+    color: #ffffff;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #008CBA;
+}
+
+a:hover {
+    color: #0066b3;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 10px 20px;
+}
+
+ul li:hover {
+    background-color: #008CBA;
+    color: #ffffff;
+}
+
+header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+    background-image: url("Ship.jpg");
+     background-position: center;
+    background-size: cover;
+     background-attachment: fixed;
+}
+
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer li {
+    margin-right: 20px;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.legal-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.legal-links a {
+    margin: 0 10px;
+}
+
+.dark-mode {
+    align-items: center;
+    background-color: #212121;
+    color: #ffffff;
+}
+
+.dark-mode h1 {
+    color: #ffffff;
+}
+
+.dark-mode nav a {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

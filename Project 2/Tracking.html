@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tracking.css">
+    <title>Package Tracking</title>
+</head>
+<body>
+    <h1>Package Tracking</h1>
+    <form id="tracking-form">
+        <label for="tracking-number">Tracking Number:</label>
+        <input type="text" id="tracking-number" required>
+        <button type="button" id="track-btn" onclick="trackPackage()">Track Package</button>
+        <button type="Reset">Reset</button>
+    </form>
+    <div id="package-status">
+        <h2>Package Status</h2>
+        <ul id="package-list"></ul>
+    </div>
+    <script src="Tracking.js"></script>
+</body>
+</html>

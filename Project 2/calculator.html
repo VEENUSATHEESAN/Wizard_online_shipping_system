@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Rate Calculator</title>
+</head>
+<body>
+    <h1>Shipping Rate Calculator</h1>
+    <div id="calculator">
+        <div class="form-group">
+            <label for="package-weight">Package Weight (kg):</label>
+            <input type="number" id="package-weight" step="0.01" min="0" max="50" required>
+        </div>
+
+        <div class="form-group">
+            <label for="package-width">Package Width (cm):</label>
+            <input type="number" id="package-width" step="1" min="1" max="200" required>
+        </div>
+
+        <div class="form-group">
+            <label for="package-height">Package Height (cm):</label>
+            <input type="number" id="package-height" step="1" min="1" max="200" required>
+        </div>
+
+        <div class="form-group">
+            <label for="package-length">Package Length (cm):</label>
+            <input type="number" id="package-length" step="1" min="1" max="200" required>
+        </div>
+
+        <div class="form-group">
+            <label for="destination">Destination:</label>
+            <select id="destination">
+                <option value="domestic">Domestic</option>
+                <option value="international">International</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="shipping-method">Shipping Method:</label>
+            <select id="shipping-method">
+                <option value="ground">Ground</option>
+                <option value="air">Air</option>
+                <option value="express">Express</option>
+            </select>
+        </div>
+
+        <button class="btn" onclick="calculateRate()">Calculate Rate</button>
+        <button class="btn" onclick="resetForm()" style="margin-top: 10px;">Reset</button>
+
+        <p id="rate"></p>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
